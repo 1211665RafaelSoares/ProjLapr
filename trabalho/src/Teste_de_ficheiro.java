@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Teste_de_ficheiro {
 
     public static int leituraFicheiroCSV (String [] arraio, int[][]valoresAcumulados){
-        String caminho = "/Users/uniccosta/Desktop/exemplo.csv";
+        String caminho = "src/exemplo.csv";
         String linha = "";
         int cont=0;
         try{
@@ -219,7 +219,10 @@ public class Teste_de_ficheiro {
         int contador = leituraFicheiroCSV(datasDoFicheiro,valores_Acumulados);
         //  imprimir_vetor_String(datasDoFicheiro,contador);
        // imprimir_matriz(valores_Acumulados, contador);
+        System.out.print("Inserir Data Inicial (dd-mm-aaaa): ");
         String data1 = trocar_A_Ordem(sc.nextLine());
+        System.out.println();
+        System.out.print("Inserir Data Final (dd-mm-aaaa): ");
         String data2 = trocar_A_Ordem(sc.nextLine());
         int X =sc.nextInt();
        // System.out.println(data1);
